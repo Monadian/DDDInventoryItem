@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch Web API (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build Web API",
+            "program": "${workspaceFolder}/WebApi/bin/Debug/net5.0/WebApi.App.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "stopAtEntry": false,
+            "justMyCode": false
+        },
+        {
+            "name": ".NET Core Launch Web Client (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet",
+            "args": [
+                "run"
+            ],
+            "cwd": "${workspaceFolder}/WebApp",
+            "env": {
+                "ASPNETCORE_URLS": "http://localhost:5002",
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+    ]
+}
